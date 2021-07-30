@@ -1,0 +1,29 @@
+
+创建JAVA项目命令
+---------------------------------
+直接建立jar应用项目
+mvn archetype:generate -DgroupId=com.train     -DartifactId=hello-app  -DinteractiveMode=false  -DarchetypeArtifactId=maven-archetype-quickstart 
+直接建立war应用
+mvn archetype:generate -DgroupId=com.train -DartifactId=hello-web   -DinteractiveMode=false  -DarchetypeArtifactId=maven-archetype-webapp
+
+
+交互创建
+mvn archetype:generate      
+mvn archetype:generate -Dfilter=maven-archetype-quickstart
+mvn archetype:generate -Dfilter=spring
+
+ 
+项目构建基本命令
+-----------------------------------------
+mvn eclipse:eclipse 
+mvn compile
+mvn compile
+mvn test
+mvn site
+mvn install  -Dmaven.test.skip=true 
+
+查看构建命令--------------------------------
+mvn  dependency:tree
+
+
+
